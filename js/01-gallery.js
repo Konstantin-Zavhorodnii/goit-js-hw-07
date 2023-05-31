@@ -4,8 +4,10 @@ import { galleryItems } from './gallery-items.js';
 console.log(galleryItems);
 
 const galleryEl = document.querySelector('.gallery');
-console.log(galleryEl);
-galleryEl.addEventListener('click', openModaling);
+console.log(galleryEl)
+galleryEl.addEventListener("click", openModalImg)
+
+
 
 galleryItems.forEach(element => {
     galleryEl.insertAdjacentHTML("beforeend", `<li class="gallery__item">
